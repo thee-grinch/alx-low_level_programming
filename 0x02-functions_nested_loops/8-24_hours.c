@@ -1,21 +1,42 @@
 #include "main.h"
 /**
- * print_last_digit -a function that prints the last digit of a number.
- * @b: the int to extract the last digit from
- * Return: value of the last digit
+ * jack_bauer - prints every minute of the day of Jack Bauer
+ * Return: void
  */
-int print_last_digit(int b)
+void jack_bauer(void)
 {
-	int a;
-
-	if (b < 0)
-		b = b;
-
-	a = b % 10;
-
-	if (a < 0)
-		a = -a;
-	_putchar(a + '0');
-	return (a);
+	char  hrtens, hr, mntens, mn;
+	
+	hrtens = '0';
+	
+	while (hrtens < '3')
+	{
+		hr = '0';
+		
+		while (hr <= '9')
+		{
+			mntens = '0';
+			while (mntens < '6')
+			{
+				mn = '0';
+				while (mn <= '9')
+				{
+					_putchar(hrtens);
+					_putchar(hr);
+					_putchar(':');
+					_putchar(mntens);
+					_putchar(mn);
+					_putchar('\n');
+					mn++;
+				}
+				mntens++;
+				mn = '0';
+			}
+			hr++;
+			mntens = '0';
+		}
+		hrtens++;
+		hr = '0';
+	}
 }
 
