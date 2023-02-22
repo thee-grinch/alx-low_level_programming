@@ -2,7 +2,7 @@
 /**
  *times_table - a function thats prints the times table 
  * 
- * /
+ */
 void times_table(void)
 {
 int a, b, c,;
