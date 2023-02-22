@@ -6,20 +6,28 @@
 void jack_bauer(void)
 {
 	char  hrtens, hr, mntens, mn;
+	
+	hrtens = '0';
 
 	while (hrtens < '3')
 	{
+		hr = '0';
+
 		while (hr <= '9')
 		{
+			mntens = '0';
+			
 			while (mntens < '6')
 			{
+				mn = '9';
+
 				while (mn <= '9')
 				{
-					_putchar('hrtens');
-					_putchar('hr');
+					_putchar(hrtens);
+					_putchar(hr);
 					_putchar(':');
-					_putchar('mntens');
-					_putchar('mn');
+					_putchar(mntens);
+					_putchar(mn);
 					_putchar('\n');
 					mn++;
 				}
