@@ -2,16 +2,15 @@
 
 /**
  * add - a function that adds two integers and returns the result.
- * @y: int to be added
- * @x: int to be added
- * Return: sum 
- *
+ * @a: int to be added to b
+ * @b: int to be added to a
+ * Return: sum of a and b
  */
-int add(int y, int x)
+int add(int a, int b)
 {
-	int z;
+	int c;
 
-	z = y + x;
+	c = a + b;
 
-	return (z);
+	return (c);
 }
