@@ -1,15 +1,14 @@
 #include "main.h";
 /**
 *swap_int - check the code
-*@a:to be swapped
-*@b:to be swapped
+*@a: to be swapped
+@b: to be swapped
 *
 */
 void swap_int(int *a, int *b)
 {
-	int *c;
-	
-	c = a;
-	a = b;
-	b = c;
+	int c = *a;
+
+	*a = *b;
+	*b = c;
 }
