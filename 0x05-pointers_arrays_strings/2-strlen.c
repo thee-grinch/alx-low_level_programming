@@ -2,7 +2,7 @@
 /**
 *_strlen - check the code
 *@s:character to be checked
-*
+*Return:length of the string
 */
 int _strlen(char *s)
 {
