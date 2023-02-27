@@ -9,14 +9,14 @@ void print_rev(char *s)
 	int i = 0;
 	int length = 0;
 
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
 		i++;
 		length++;
 	}
 	while (length >= 0)
 	{
-		if (str[length] != '\0')
+		if (s[length] != '\0')
 			_putchar(str[length];
 		length--;
 	}
