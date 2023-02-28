@@ -4,6 +4,7 @@
 *_strcpy - check the code
 *@dest:destination
 *@src:source
+*Return:dest
 */
 char *_strcpy(char *dest, char *src)
 {
