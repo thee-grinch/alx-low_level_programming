@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 *rev_string - check the code
-*@S:string to be checked
+*@s:string to be checked
 */
 void rev_string(char *s)
 {
@@ -22,4 +22,4 @@ void rev_string(char *s)
 		j--;
 		i++;
 	}
-}	
+}

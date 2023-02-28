@@ -1,14 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 /**
-*main - check the code
+*_strcpy - check the code
 *@dest:destination
 *@src:source
 */
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
-	
+
 	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
