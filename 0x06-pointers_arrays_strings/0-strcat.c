@@ -2,7 +2,7 @@
 /**
  *_strcat - check the code
  *@dest: string one
- *src: string two
+ *@src: string two
  *Return: concatenated string
  */
 char *_strcat(char *dest, char *src)
