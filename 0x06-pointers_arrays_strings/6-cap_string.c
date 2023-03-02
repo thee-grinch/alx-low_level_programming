@@ -7,9 +7,10 @@
 char *cap_string(char *s)
 {
 	int i, j;
-	char sep[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{'};
+	char sep[] = " \n\t,;.!?\"(){}";
 
-	sep[12] = '}';
+	if (s[0] >= 'a' && s[0] <= 'z')
+		z[0] -= 32;
 	for (i = 0; s[i]; i++)
 	{
 		for (j = 0; sep[j]; j++)
