@@ -10,7 +10,7 @@ char *cap_string(char *s)
 	char sep[] = " \n\t,;.!?\"(){}";
 
 	if (s[0] >= 'a' && s[0] <= 'z')
-		z[0] -= 32;
+		s[0] -= 32;
 	for (i = 0; s[i]; i++)
 	{
 		for (j = 0; sep[j]; j++)
