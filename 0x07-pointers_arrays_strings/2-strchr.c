@@ -3,6 +3,7 @@
 *_strchr - check the code
 *@s: main string
 *@c: substring
+*Return: string s
 */
 char *_strchr(char *s, char c)
 {
@@ -11,5 +12,6 @@ char *_strchr(char *s, char c)
 		if (*s == c)
 			return (s);
 	}
-	return (0);
+	*s = NULL;
+	return (s);
 }
