@@ -7,26 +7,12 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0;
-	int ans;
-
-	while (s1[i] != '\0' || s2[i] != '\0')
+	while (*s1 && *s2)
 	{
-		if (s1[i] > s2[i])
-		{
-			ans = 15;
-			break;
-		}
-		else if (s2[i] > s1[i])
-		{
-			ans = -15;
-			break;
-		}
-		else
-		{
-			i++;
-		}
-		ans = 0;
+		if (*s1 != *s2)
+			return (*s2 - *s1);
+		s1++;
+		s2++;
 	}
-	return (ans);
+	return (*s2 - *s1);
 }
