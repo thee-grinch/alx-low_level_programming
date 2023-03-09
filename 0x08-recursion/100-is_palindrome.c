@@ -1,10 +1,9 @@
-#include "main.h"
 /**
 *strl - length
 *@s: string
 *Return: the length
 */
-int strl(*s)
+int strl(char *s)
 {
 	if (*s == '\0')
 		return (0);
@@ -23,7 +22,7 @@ int is_palindrome(char *s)
 
 	while (l > 0)
 	{
-		if (*(s + h++) != *(s + l--)
+		if (*(s + h++) != *(s + --l))
 			return (0);
 	}
 	return (1);
