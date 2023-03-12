@@ -26,6 +26,7 @@ int isPalindrome (char *s, int i, int l)
 		return (0);
 	else if (s[i] == s[l])
 		return (1);
+	return (0);
 }
 /**
 *is_palindrome - checks whether a srting is a palindrome
