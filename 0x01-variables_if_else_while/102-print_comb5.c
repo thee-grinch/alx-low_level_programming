@@ -7,9 +7,9 @@ int main(void)
 {
 	int c, d;
 
-	for (d = 0; d <= 99; d++)
+	for (c = 0; c <= 99; c++)
 	{
-		for (c = 0; c <= 99; c++)
+		for (d = 0; d <= 99; d++)
 		{
 			if (c >= d)
 			{
@@ -21,7 +21,9 @@ int main(void)
 			putchar('0' + d / 10);
 			putchar('0' + d % 10);
 			if (c == 98 && d == 99)
-				break;
+			{
+				continue;
+			}
 			else
 			{
 				putchar(',');
