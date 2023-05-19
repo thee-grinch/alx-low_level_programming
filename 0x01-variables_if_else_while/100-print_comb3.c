@@ -7,7 +7,7 @@ int main(void)
 {
 	int c;
 
-	for (c == 0; c <= 99; c++)
+	for (c = 0; c <= 99; c++)
 	{
 		if (c / 10 >= c % 10)
 		{
