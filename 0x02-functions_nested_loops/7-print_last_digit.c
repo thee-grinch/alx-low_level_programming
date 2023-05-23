@@ -2,10 +2,14 @@
 /**
  * print_last_digit - check the code
  * @c: check
- * @Return: always zero
+ * Return: always zero
  */
 int print_last_digit(int c)
 {
-	_putchar('0' + (c % 10));
-	return (c % 10);
+	int l = (c % 10);
+
+	_putchar('0' + l);
+	return (l);
 }
+
+
