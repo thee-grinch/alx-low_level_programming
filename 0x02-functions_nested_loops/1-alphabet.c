@@ -3,7 +3,7 @@
  * main - check the code
  * Return: always zero
  */
-int main(void)
+void print_alphabet(void)
 {
 	int i;
 

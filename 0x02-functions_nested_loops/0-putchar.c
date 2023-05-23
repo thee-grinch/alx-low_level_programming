@@ -2,9 +2,8 @@
 /**
  * main - prints the function name
  * Return: always zero
- * @c: printed character
  */
-int main(int c)
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
