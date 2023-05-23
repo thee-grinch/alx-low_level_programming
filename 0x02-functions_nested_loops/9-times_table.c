@@ -28,3 +28,4 @@ void times_table(void)
 		}
 		j = 0;
 	}
+}
