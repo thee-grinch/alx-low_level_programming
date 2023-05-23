@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _islower - check the code
- * @C: char to be checked
+ * @c: char to be checked
  * Return: 1 true 0 false
  */
 int _islower(int c)
