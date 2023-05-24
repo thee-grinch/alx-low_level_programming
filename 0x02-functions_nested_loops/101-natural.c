@@ -18,5 +18,5 @@ int main(void)
 	}
 	printf("%d", sum);
 	putchar(10);
-	return (sum);
+	return (0);
 }
