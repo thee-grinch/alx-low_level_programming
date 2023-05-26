@@ -29,6 +29,5 @@ void print_number(int n)
 		_putchar('0' + rev % 10);
 		rev /= 10;
 	}
-	_putchar('\n');
 }
 
