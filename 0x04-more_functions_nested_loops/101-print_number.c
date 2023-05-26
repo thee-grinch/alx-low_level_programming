@@ -5,7 +5,7 @@
  */
 void print_number(int n)
 {
-	int rev, i, k, j;
+	int rev, i, j;
 
 	rev = 0;
 	if (n < 0)
