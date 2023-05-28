@@ -10,6 +10,7 @@ int main(void)
 
 	n1 = 1;
 	n2 = 2;
+	n3 = 0;
 	sum = 2;
 	while (n3 <= 4000000)
 	{
