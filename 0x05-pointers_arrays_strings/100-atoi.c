@@ -23,6 +23,7 @@ int _atoi(char *s)
 				break;
 		}
 	}
-	rev = rev * sign;
+	if (sign < 0)
+		rev = 0 - rev;
 	return (rev);
 }
