@@ -9,7 +9,7 @@ char *cap_string(char *s)
 	char *c = ",;.!?\"(){} \n\t";
 	int i, j;
 
-	if  (s[0] >= 'a' && s[0] <= 'Z')
+	if  (s[0] >= 'a' && s[0] <= 'z')
 		s[0] -= 32;
 	for (i = 0; s[i] != '\0'; i++)
 	{
