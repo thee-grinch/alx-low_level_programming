@@ -11,6 +11,7 @@ char *cap_string(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
+		s[0] -= 32;
 		for (j = 0; c[j] != '\0'; j++)
 		{
 			if (c[j] == s[i])
