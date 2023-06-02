@@ -15,7 +15,7 @@ void print_number(int n)
 	}
 	reverse = n;
 
-	if (x / 10)
-		print_number(x / 10);
-	_putchar(x % 10 + '0');
+	if (reverse / 10)
+		print_number(reverse / 10);
+	_putchar(reverse % 10 + '0');
 }
