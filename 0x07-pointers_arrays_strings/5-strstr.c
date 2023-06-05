@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _strchr - locates a substring
+ * _strstr - locates a substring
  * @haystack: the substring
  * @needle: the string
  * Return: the location
@@ -23,11 +23,10 @@ char *_strstr(char *haystack, char *needle)
 				j++;
 			}
 			if (needle[j] == '\0')
-				return (haystack + i);
-			else
+				return (haystack + i - j);
+			if (needle[j] != '\0')
 			{
 				j = 0;
-				i++;
 			}
 		}
 		else
