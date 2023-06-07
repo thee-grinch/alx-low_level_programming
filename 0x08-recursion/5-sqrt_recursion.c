@@ -9,9 +9,9 @@ int squareroot(int n, int g)
 {
 	if (g * g == n)
 		return (g);
-	if (g * g < n)
+	if (g * g > n)
 		return (-1);
-	return (squareroot(n, g - 1));
+	return (squareroot(n, g + 1));
 }
 /**
  * _sqrt_recursion - checks the squareroot
@@ -20,11 +20,5 @@ int squareroot(int n, int g)
  */
 int _sqrt_recursion(int n)
 {
-	int g;
-
-	if (n > 1000000)
-		g = n / 1000;
-	else
-		g = n;
-	return (squareroot(n, g));
+	return (squareroot(n, 1));
 }
