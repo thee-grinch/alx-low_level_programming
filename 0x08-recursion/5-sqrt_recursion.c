@@ -20,5 +20,11 @@ int squareroot(int n, int g)
  */
 int _sqrt_recursion(int n)
 {
-	return (squareroot(n, n));
+	int g;
+
+	if (n > 1000000)
+		g = n / 1000;
+	else
+		g = n;
+	return (squareroot(n, g));
 }
