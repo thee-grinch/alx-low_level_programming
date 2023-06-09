@@ -13,13 +13,13 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		puts("0");
-		return (0);
+		return (1);
 	}
 	sum = 0;
 	for (i = 1; i < argc; i++)
 	{
 		a = atoi(argv[i]);
-		if (a == 0 || argv[i][0] == '\0')
+		if (a == 0)
 		{
 			puts("Error");
 			return (1);
