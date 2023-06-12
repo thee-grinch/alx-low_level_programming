@@ -7,6 +7,8 @@
  */
 int _strlen(char *s)
 {
+	if (s == NULL)
+		return (0);
 	if (*s == '\0')
 		return (0);
 	return (1 + _strlen(s + 1));
@@ -28,14 +30,18 @@ char *str_concat(char *s1, char *s2)
 	if (concat == NULL)
 		return (NULL);
 	i = 0;
-	while (*s1 != '\0')
+	while (*s1)
 	{
+		if (*s1 == '\0')
+			break;
 		concat[i] = *s1;
 		i++;
 		s1 += 1;
 	}
-	while (*s2 != '\0')
+	while (*s2)
 	{
+		if (*s2 == '\0')
+			break;
 		concat[i] = *s2;
 		i++;
 		s2 += 1;
