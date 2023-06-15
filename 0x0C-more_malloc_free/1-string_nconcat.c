@@ -5,7 +5,7 @@
  * @s: the string
  * Return: str length
  */
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
 	if (*s == '\0')
 		return (0);
@@ -20,7 +20,7 @@ int _strlen(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int len1, len2;
+	unsigned int len1, len2;
 	unsigned int i, j;
 	char *concat;
 
@@ -38,7 +38,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		concat[j++] = s1[i];
 	}
-	for (i = 0; i < n && s2[i] != '\0' && i  < len2; i++)
+	for (i = 0; i < n && s2[i] != '\0' && i < len2; i++)
 	{
 		concat[j++] = s2[i];
 	}
