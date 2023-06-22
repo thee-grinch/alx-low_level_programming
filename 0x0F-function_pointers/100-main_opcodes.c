@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print - prints the opcodes
- * @s: the string
+ * @num: the string
  */
 void print(int num)
 {
@@ -11,7 +11,7 @@ void print(int num)
 	for (int i = 0; i < num; i++)
 	{
 		printf("%02x ", *(ptr + i));
-       	}
+	}
 
 	printf("\n");
 }
@@ -21,8 +21,10 @@ void print(int num)
  * @argv: the argument vector
  * Return: always zero
  */
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
 	int num;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -37,5 +39,5 @@ int main(int argc, char *argv[]) {
 		exit(2);
 	}
 	print(num);
-	return 0;
+	return (0);
 }
