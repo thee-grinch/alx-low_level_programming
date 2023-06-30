@@ -14,10 +14,10 @@ size_t print_list(const list_t *h)
 	while (h)
 	{
 		_putchar('[');
-		_putchar('0' + h -> len);
+		_putchar('0' + h->len);
 		_putchar(']');
 		_putchar(' ');
-		str = h -> str;
+		str = h->str;
 		if (str == NULL)
 		{
 			while (*s)
@@ -27,13 +27,13 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			for (i = 0; i < (h -> len); i++)
+			for (i = 0; i < (h->len); i++)
 			{
 				_putchar(str[i]);
 			}
 		}
 		_putchar('\n');
-		h = h -> next;
+		h = h->next;
 		count++;
 	}
 	return (count);
