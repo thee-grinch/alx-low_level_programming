@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int re, wr, src, dest, cl, cl2;
+	int re = 0, wr = 0, src = 0, dest = 0, cl = 0, cl2 = 0;
 	char buffer[1024];
 	
 	if (argc != 3)
