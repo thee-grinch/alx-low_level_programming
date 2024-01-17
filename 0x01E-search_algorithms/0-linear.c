@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "search_algos.h"
 
 /**
  * linear_search - implementation of a linear search algorithm
