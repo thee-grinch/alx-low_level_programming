@@ -13,8 +13,10 @@ int binary_search(int *array, size_t size, int value)
 
 	printf("Searching in array: ");
 	for (i = 0; i < size; i++)
-		printf("%d, ", array[i]);
-	printf("\n");
+		if (i == size - 1)
+			printf("%d\n", array[i]);
+		else
+			printf("%d, ", array[i]);
 
 	if (size % 2 != 0)
 		mid_point = size / 2;
